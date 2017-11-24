@@ -1,5 +1,10 @@
-body {
-  margin: 0;
+.body {
+  margin: 24px auto !important;
   padding: 0;
+  width: 90%;
   font-family: sans-serif;
+}
+
+.link__current {
+  font-weight: 700;
 }
