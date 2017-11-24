@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
-import 'shoelace-css/source/css/shoelace.css';
 import Home from './containers/Home';
 import Forms from './containers/Forms';
 import Maps from './containers/Maps';
@@ -13,9 +12,9 @@ class App extends Component {
     const { user } = this.props.globalState;
 
     return (
-      <div className="body row">
+      <div className="body">
         <Router>
-          <div className="col">
+          <div>
             <Route component={Navigation({ name: user.name })} />
             <Switch>
               <Route exact path="/" component={Home} />
